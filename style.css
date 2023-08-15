@@ -1,0 +1,12 @@
+header{
+    background: url("crop-plate-with-vegetable-salad2.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 650px;
+}
+
+.materialboxed{
+    cursor: pointer;
+}
+
+
