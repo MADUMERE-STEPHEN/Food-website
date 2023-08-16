@@ -37,6 +37,19 @@
         </ul>
     </nav>
 
+        <div class="boss">
+        <main>
+        <div class="preloader">
+            <div class="preloader__square"></div>
+            <div class="preloader__square"></div>
+            <div class="preloader__square"></div>
+            <div class="preloader__square"></div>
+        </div>
+        <div class="status">Loading<span class="status__dot">.</span><span class="status__dot">.</span><span class="status__dot">.</span></div>
+    </main>
+     </div>
+
+        
     <div class="container">
         <h1 class="center white-text">Food Village</h1>
         <p class="white-text center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -272,6 +285,20 @@ var x = setInterval(function() {
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+        document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                  "body").style.visibility = "hidden";
+                document.querySelector(
+                  ".boss").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                  ".boss").style.display = "none";
+                document.querySelector(
+                  "body").style.visibility = "visible";
+            }
+        };
     </script>
 </body>
 </html>
