@@ -275,19 +275,6 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-        document.onreadystatechange = function() {
-            if (document.readyState !== "complete") {
-                document.querySelector(
-                  "body").style.visibility = "hidden";
-                document.querySelector(
-                  ".boss").style.visibility = "visible";
-            } else {
-                document.querySelector(
-                  ".boss").style.display = "none";
-                document.querySelector(
-                  "body").style.visibility = "visible";
-            }
-        };
     </script>
 </body>
 </html>
